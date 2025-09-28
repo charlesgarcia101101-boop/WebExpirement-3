@@ -1,0 +1,101 @@
+:root{
+    --primary:#260029;
+    --secondary:#45004a;
+    --text:#fafafa;
+    --card:#ededed;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(100deg, var(--primary), var(--secondary));
+    padding: 20px 60px;
+}
+
+header h1{
+    color: var(--text);
+}
+
+nav a{
+    color: var(--text);
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-left: 50px;
+    font-weight: bold;
+    transition: underline 0.3s;
+}
+
+nav a:hover{
+    text-decoration: underline 2px;
+}
+
+.container{
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.productsCard{
+    background-color: var(--card);
+    height: 350px;
+    padding: 1rem;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 3px 20px rgba(65, 0, 65, 0.24);
+    transition: 0.3s;
+}
+
+.productsCard:hover{
+    transform: translateY(-10px);
+}
+
+.productsCard h2{
+    color: var(--primary);
+    margin-bottom: 0.50rem;
+}
+
+
+
+img{
+    width: 75%;
+    height: 200px;
+    border-radius: 8px;
+    margin-bottom: 0.25rem;
+}
+
+p{
+    color: hsl(0, 100%, 50%);
+    margin-bottom: 0.50rem;
+}
+
+button{
+    background-color: var(--primary);
+    color: var(--text);
+    font-weight: bold;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover{
+    background-color: var(--secondary);
+}
+
+footer{
+    background: linear-gradient(100deg, var(--primary), var(--secondary));
+    padding: 40px;
+    font-size: 2rem;
+    color: var(--text);
+    text-align: center;
+    border-radius: 1.5rem 1.5rem 0 0;
+}
+
